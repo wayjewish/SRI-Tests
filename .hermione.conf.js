@@ -9,7 +9,7 @@ module.exports = {
     chrome: {
       automationProtocol: "devtools",
       // retry: 5,
-      screenshotDelay: 10000,
+      // screenshotDelay: 10000,
       desiredCapabilities: {
         browserName: "chrome",
       },

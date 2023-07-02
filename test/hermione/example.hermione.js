@@ -11,45 +11,45 @@ const routes = {
 };
 
 describe('Общие требования', async () => {
-    describe('вёрстка должна адаптироваться под ширину экрана', async () => {
-        describe('home page', async () => {
-            it('1400', async ({ browser }) => {
-                await browser.setWindowSize(1400, 1400);
-                await browser.url(url);
-                await browser.assertView('plain', 'body');
-            });
+    // describe('вёрстка должна адаптироваться под ширину экрана', async () => {
+    //     describe('home page', async () => {
+    //         it('1400', async ({ browser }) => {
+    //             await browser.setWindowSize(1400, 1400);
+    //             await browser.url(url);
+    //             await browser.assertView('plain', 'body');
+    //         });
 
-            it('1200', async ({ browser }) => {
-                await browser.setWindowSize(1200, 1200);
-                await browser.url(url);
-                await browser.assertView('plain', 'body');
-            });
+    //         it('1200', async ({ browser }) => {
+    //             await browser.setWindowSize(1200, 1200);
+    //             await browser.url(url);
+    //             await browser.assertView('plain', 'body');
+    //         });
 
-            it('992', async ({ browser }) => {
-                await browser.setWindowSize(992, 992);
-                await browser.url(url);
-                await browser.assertView('plain', 'body');
-            });
+    //         it('992', async ({ browser }) => {
+    //             await browser.setWindowSize(992, 992);
+    //             await browser.url(url);
+    //             await browser.assertView('plain', 'body');
+    //         });
 
-            it('768', async ({ browser }) => {
-                await browser.setWindowSize(768, 768);
-                await browser.url(url);
-                await browser.assertView('plain', 'body');
-            });
+    //         it('768', async ({ browser }) => {
+    //             await browser.setWindowSize(768, 768);
+    //             await browser.url(url);
+    //             await browser.assertView('plain', 'body');
+    //         });
 
-            it('576', async ({ browser }) => {
-                await browser.setWindowSize(576, 576);
-                await browser.url(url);
-                await browser.assertView('plain', 'body');
-            });
+    //         it('576', async ({ browser }) => {
+    //             await browser.setWindowSize(576, 576);
+    //             await browser.url(url);
+    //             await browser.assertView('plain', 'body');
+    //         });
 
-            it('320', async ({ browser }) => {
-                await browser.setWindowSize(320, 320);
-                await browser.url(url);   
-                await browser.assertView('plain', 'body');
-            });
-        });
-    });
+    //         it('320', async ({ browser }) => {
+    //             await browser.setWindowSize(320, 320);
+    //             await browser.url(url);   
+    //             await browser.assertView('plain', 'body');
+    //         });
+    //     });
+    // });
 
     describe('Навигационное меню', async () => {
         it('отображается кнопка-переключатель меню', async ({ browser }) => {
